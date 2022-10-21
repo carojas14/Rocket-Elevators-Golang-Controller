@@ -74,7 +74,7 @@ func scenario3() *Elevator {
 	column.setupElevators([]ElevatorDetails{elevator1, elevator2, elevator3, elevator4, elevator5})
 
 	chosenElevator := column.requestElevator(54, "down")
-	moveAllElevators(&column)
+	moveAllElevators(column)
 	return chosenElevator
 }
 
@@ -90,7 +90,7 @@ func scenario4() *Elevator {
 	column.setupElevators([]ElevatorDetails{elevator1, elevator2, elevator3, elevator4, elevator5})
 
 	chosenElevator := column.requestElevator(-3, "up")
-	moveAllElevators(&column)
+	moveAllElevators(column)
 	return chosenElevator
 }
 
